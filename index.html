@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<!--
+Author: Shayna Jamieson
+FileName: guestbook.php
+Date: 10/05/2019
+The purpose of this assignment was to practice using Bootstrap and to come up with a digital resume.
+Using the Bootstrap classes allows the resume to be responsive and look great! This class serves as the HTML structure and bootstrap
+responsive class. It is linked to styles.css
+-->
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type=text/css href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+
+    <title>Shayna J.</title>
+
+
+</head>
+<body>
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="row">
+
+            <div class="container">
+                <h1 class="display-3">Shayna Jamieson</h1>
+                <h1 class="display-4">Software Engineer</h1>
+                <p class="lead">Leveraging cultivated knowledge && an eagerness to absorb new tricks/technologies.</p><br>
+            </div>
+
+        </div>
+
+    </div><!-- ending section for the jumbotron -->
+
+
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class=" col-sm-12 col-md-6 offset-md-2 card" id="cardClass" style="width: 30rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Contact Info</h5><br>
+                    <p class="card-text"><strong>Email</strong> | jamieson.shayna@gmail.com</p>
+                    <p class="card-text"><strong>Phone</strong> | 253 213 6729</p>
+                    <p class="card-text"><strong>LinkedIn</strong> | linkedin.com/in/shayna-jamieson</p>
+                    <p class="card-text"><strong>Github</strong> | github.com/jamiesonshayna</p>
+
+                    <a href="mailto:jamieson.shayna@gmail.com?subject=Shayna%20Jamieson%20Online%20Resume" target="_blank" class="btn btn-primary btn-lg">Email</a>
+                    <a href="https://www.linkedin.com/in/shayna-jamieson/" target="_blank" class="btn btn-primary btn-lg" role="button">LinkedIn</a>
+                </div>
+            </div> <!-- end of card for contact information-->
+
+            <div class="col col-md-4 d-sm-none d-md-block">
+                <img src="images/photo_of_me2.png" class="img hidden-xs" id="photoMe" alt="Responsive image">
+            </div> <!-- end of image-->
+
+
+
+        </div> <!-- end of the row that holds contact info and photo of myself-->
+
+    </div>
+
+
+    <div class="container">
+
+        <h2 class="toast-header">Skills</h2>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-interval="10000" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carouselCentered">
+
+                        <h1>Programming Languages</h1>
+                    </div><br>
+                    <div class="carouselCentered">
+                        <p>Java</p>
+                    </div>
+                    <div class="carouselCentered">
+                        <p>Swift</p>
+
+                    </div>
+                    <div class="carouselCentered">
+                        <p>Dart</p>
+
+                    </div>
+                    <div class="carouselCentered">
+                        <p>Python</p>
+
+                    </div>
+                    <div class="carouselCentered">
+                        <p>C#</p>
+
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="carouselCentered">
+                        <h1>Technical</h1>
+                    </div>
+                    <div class="carouselCentered">
+                        <h4>Mobile Applications</h4>
+                    </div>
+                    <div class="carouselCentered">
+                        <p>XCode, Android Studios, Flutter, AWS Cognito/MySQL RDS, Firebase, Cocoapods, Google Play, Apple Store.</p>
+                    </div>
+
+                    <div class="carouselCentered">
+                        <h4>Web Development</h4>
+                    </div>
+
+                    <div class="carouselCentered">
+                        <p>JavaScript, SQL, HTML5, CSS, Bootstrap, JQuery, PHP.</p>
+
+                    </div>
+
+                    <div class="carouselCentered">
+                        <h4>Other</h4>
+                    </div>
+                    <div class="carouselCentered">
+                        <p>Terminal, Bash, Github, Prototyping, Agile, DBMS.</p>
+                    </div>
+
+
+                </div>
+                <div class="carousel-item">
+                    <div class="carouselCentered">
+                        <h1>Interpersonal</h1>
+
+                    </div><br>
+                    <div class="carouselCentered">
+                        <p>Respectful of workplace culture/etiquette, receptive, attentive, collaborative, positive, confident, management experience, ethical.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+
+        <h2 class="toast-header">Professional Experience</h2>
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button id="mobileGroup" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Mobile Application Developer
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">Biohacked Inc.<br>July 2019 - Current</div>
+                    <div class="card-body">
+                        Migrating part of a company's website to become a cross platform Flutter mobile application, resulting in increased HTTP response speed. Utilizing AWS creates the opportunity for user's to store/retrieve their data, as well as be securely authenticated to manage their settings and profile. Developing this application allows for better UX flow, real-time results fetching, and optional offline access for registered users.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button id="iOSGroup" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            iOS Application Development
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">Independent<br>June 2019 - August 2019</div>
+                    <div class="card-body">
+                        Engineered a timed quiz application that enhances learning on subjects such as SQL, HTML, Python, and JavaScript. Technologies including Xcode, Swift, and Adobe XD allowed for efficient planning, flawless UX, and minimalistic but striking design.                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button id="javaGroup" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Java Peer Mentor Group
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">Green River College<br>March 2019 - June 2019</div>
+                    <div class="card-body">
+                        Quadrupled member registry, creating a more diverse and active peer network. Implemented collaborative sessions where fellow students could practice OOP data structures/algorithms, whiteboarding, and testing. Improved student test scores as well as homework quality and speed.                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--    End of professional experience!!-->
+
+
+    <div class="container" id="educationSection">
+
+        <h2 class="toast-header">Education</h2>
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="images/books2.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Green River College</h5>
+                    <h5 class="card-title">Bachelor of Applied Science</h5>
+                    <p class="card-text">IT: Software Development</p>
+                    <p class="card-text">Expected Graduation: June 2021</p>
+                    <p class="card-text"><small class="text-muted">GPA 4.0</small></p><br>
+                    <h5 class="card-title">Extracurriculars</h5>
+                    <ul>
+                        <li>BoardMasters of Green River
+                            <ul>
+                                <li>Whiteboarding/Networking Club</li>
+                            </ul>
+                        </li>
+                        <li>Green River Foundation Scholarship
+                            <ul>
+                                <li>Bank of America Multicultural</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/books.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Tacoma Community College</h5>
+                    <h5 class="card-title">Associate of Arts and Sciences</h5>
+                    <p class="card-text">General Studies</p>
+                    <p class="card-text">Graduation: June 2015</p>
+                    <p class="card-text"><small class="text-muted">GPA 4.0</small></p><br>
+                    <h5 class="card-title">Extracurriculars</h5>
+                    <ul>
+                        <li>Phi Theta Kappa
+                            <ul>
+                                <li>TCC Honors Society</li>
+                            </ul>
+                        </li>
+                        <li>Graduated Summa Cum Laude</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

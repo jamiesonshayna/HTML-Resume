@@ -1,0 +1,92 @@
+/*
+Author: Shayna Jamieson
+FileName: guestbook.php
+Date: 10/05/2019
+The purpose of this assignment was to practice using Bootstrap and to come up with a digital resume.
+Using the Bootstrap classes allows the resume to be responsive and look great! This class serves as the CSS or styles sheet.
+Here I am overriding some of the Bootstrap properties as well as configuring the structure a bit more.
+*/
+
+body {
+    background-color: whitesmoke;
+}
+
+.jumbotron {
+    background-image: url("images/white_bg.jpg");
+    background-size: cover;
+    min-height: 400px;
+    color: #262626 !important;
+}
+
+.jumbotron p {
+    max-width: 250px;
+}
+
+
+#photoMe {
+    margin-top: 25px;
+    border-radius: 5%;
+}
+
+@media (max-width: 576px) {
+    #photoMe {
+        display: none;
+    }
+}
+
+#cardClass {
+    border-radius: 2% !important;
+}
+
+.toast-header {
+    margin-top: 50px;
+    color: #212b31 !important;
+}
+
+.card-body a {
+    background-color: #707c80 !important;
+    border-color: #707c80 !important;
+}
+
+.carousel-item {
+    max-width: 100%;
+    height: 375px;
+    background-image: url("images/succulents2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #262626;
+}
+
+.carousel-item p {
+    max-width: 400px;
+}
+
+.carouselCentered {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#mobileGroup  {
+    color: #262626;
+}
+
+#iOSGroup {
+    color: #262626;
+}
+
+#javaGroup {
+    color: #262626;
+}
+
+#educationSection {
+    margin-bottom: 75px;
+}
+
+#educationSection img {
+    max-height: 279px;
+}
+
+li:first-of-type {
+    padding-bottom: 7px;
+}
